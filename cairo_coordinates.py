@@ -12,8 +12,8 @@ while (time_current < number_of_times):
 
     with open('out.txt', 'a') as f:
         print >> f, "cairo_line_to(cr, " + str(point_x1) + ", " + str(point_y1) + ");"
+        print >> f, "cairo_close_path(cr);"
     f.close()
 
-
-
-
+    print "cairo_line_to(cr, " + str(point_x1) + ", " + str(point_y1) + ");"
+print "cairo_close_path(cr);"
