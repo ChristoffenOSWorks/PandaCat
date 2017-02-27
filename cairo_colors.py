@@ -20,8 +20,10 @@ def toCairo():
 	b_three = round(b_two, 2);
 
 	with open('out.txt', 'a') as f:
-		print >> f, "cairo_set_source_rgba(" + str(r_three) + ", " + str(g_three) + ", " + str(b_three) + ", 0.8);";
+		print >> f, "cairo_set_source_rgba(cr, " + str(r_three) + ", " + str(g_three) + ", " + str(b_three) + ", 0.8);";
 	f.close()
+
+	print "cairo_set_source_rgba(cr, " + str(r_three) + ", " + str(g_three) + ", " + str(b_three) + ", 0.8);";
 
 def toRGBA():
 	print "\n    Enter the R value to be converted.\n";
@@ -47,6 +49,16 @@ print "Script to convert between sane-people RGB and near retard-level Cairo API
 print "Type 'cairo' to convert to the Cairo-formatted RGB, or 'rgb' for the standard form.\n\n";
 
 mode = raw_input("    >> ");
+
+if (mode == 'cairo'):
+    toCairo();
+elif (mode == 'rgb'):
+	toRGBA();
+else:
+	print "Command unrecognized";
+
+
+
 
 if (mode == 'cairo'):
     toCairo();
