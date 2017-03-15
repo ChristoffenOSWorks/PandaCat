@@ -1,7 +1,19 @@
-startx = int(raw_input("Enter the starting X value"))
-starty = int(raw_input("Enter the starting Y value"))
+def moveTo():
+	print "Enter the starting X value"
+	startx = int(raw_input("    >> "))
 
-print "cairo_move_to(cr, " + str(startx) + ", " + str(starty) + ");"
+	print "Enter the starting Y value"
+	starty = int(raw_input("    >> "))
+
+	moveToStart = "cairo_move_to(cr, "
+	moveToStop = ");"
+	end = ", "
+	x = str(startx)
+	y = str(starty)
+
+	print moveToStart + x + end + y + moveToStop
+
+moveTo()
 
 
 
