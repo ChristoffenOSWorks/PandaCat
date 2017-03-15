@@ -3,11 +3,7 @@ from cairo_colors import toCairo
 from cairo_line import lineTo
 from name import name
 from filename import *
-
-space1 = "        "
-space2 = "            "
-end = "\n"
-quote = "\""
+from variables import *
 
 def part1():
 	with open(filename, 'a') as f:
@@ -20,18 +16,21 @@ def part1():
 	f.close()
 part1()
 
-print "Please enter the width and height of the image to be generated."
+print new + space3 + heading * length1 
+print widthHead
+print space3 + heading * length1 
+
 resolution()
 
 def part2():
 	with open(filename, 'a') as f:
 		print >> f, space1 + "cairo_t *cr = "
-		print >> f, space2 + "cairo_create (surface);" + end
+		print >> f, space2 + "cairo_create (surface);" + new
 	f.close()
 
 part2()
 
-print "Please enter the R, G, and B values for the outline of the image to be generated."
+print space3 + "Please enter the R, G, and B values for the outline of the image to be generated." + new
 toCairo()
 
 def part2_5():
@@ -41,8 +40,8 @@ def part2_5():
 
 part2_5()
 
-print "Please enter the number of points to plot determined from static image using the GIMP or something similar"
-print "Please remember to close by making the last plot same as first."
+print space3 + "Please enter the number of points to plot determined from static image using the GIMP or something similar" 
+print space3 + "Please remember to close by making the last plot same as first." + new
 lineTo()
 
 def part3():
@@ -52,17 +51,17 @@ def part3():
 
 part3()
 
-print "Please enter the R, G, and B values for the area of the image outline to be generated."
+print space3 + "Please enter the R, G, and B values for the area of the image outline to be generated." + new
 toCairo()
 
 def part4():
 	with open(filename, 'a') as f:
-		print >> f, space1 + "cairo_stroke (cr);" + end
+		print >> f, space1 + "cairo_stroke (cr);" + new
 	f.close()
 
 part4()
 
-print "Please give the name of the image to be generated."
+print space3 + "Please give the name of the image to be generated." + new
 name()
 
 def part5():

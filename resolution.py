@@ -1,20 +1,14 @@
 from filename import *
-
-wText = "Enter image height: "
-hText = "Enter image length: "
-bell = "    >> "
-new = "\n"
-resolutionStart = "cairo_image_surface_create (CAIRO_FORMAT_ARGB32, "
-resolutionEnd = ");"
-end = ", "
-space1 = "            "
+from variables import *
 
 def resolution():
-	print wText + new
-	width = int(raw_input(bell))
+	print new + space3 + subHeading * length3
+	print space3 + wText 
+	print space3 + subHeading * length3
+	width = int(raw_input(space3 + bell))
 
-	print hText + new
-	height = int(raw_input(bell))
+	print space3 + hText + new
+	height = int(raw_input(space3 + bell))
 
 	stringW = str(width)
 	stringH = str(height)
