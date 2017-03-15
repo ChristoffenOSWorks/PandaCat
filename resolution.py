@@ -1,3 +1,5 @@
+from filename import *
+
 wText = "Enter image height: "
 hText = "Enter image length: "
 bell = "    >> "
@@ -5,7 +7,7 @@ new = "\n"
 resolutionStart = "cairo_image_surface_create (CAIRO_FORMAT_ARGB32, "
 resolutionEnd = ");"
 end = ", "
-cairoRes = "Your resolution in cairo is: "
+space1 = "            "
 
 def resolution():
 	print wText + new
@@ -16,10 +18,8 @@ def resolution():
 
 	stringW = str(width)
 	stringH = str(height)
-
-	print cairoRes + new
 	
-	with open('out.txt', 'a') as f:
-		print >> f, resolutionStart + stringW + end + stringH + resolutionEnd
+	with open(filename, 'a') as f:
+		print >> f, space1 + resolutionStart + stringW + end + stringH + resolutionEnd
 	f.close()
 

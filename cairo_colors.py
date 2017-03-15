@@ -1,3 +1,5 @@
+from filename import *
+
 new = "\n"
 setSourceRGBAStart = "cairo_set_source_rgba(cr, "
 before = "Before Cairo, the original RGB values are: " 
@@ -11,6 +13,7 @@ crtTwo = "Script to convert between sane-people RGB and near retard-level Cairo 
 crtThree = "Type 'cairo' to convert to the Cairo-formatted RGB, or 'rgb' for the standard form."
 cmd = "Command not recognized"
 toCairoEnd = ", 0.8);"
+space1 = "        "
 
 def toCairo():
 	print convertR + new
@@ -37,11 +40,11 @@ def toCairo():
 	stringG = str(g_three)
 	stringB = str(b_three)
 
-	with open('out.txt', 'a') as f:
-		print >> f, setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+	with open(filename, 'a') as f:
+		print >> f, space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
 	f.close()
 
-	print setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+	print space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
 
 def toRGBA():
 	print convertR + new
