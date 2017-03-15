@@ -27,6 +27,7 @@ def lineTo():
 
 	if (time_current == number_of_times):
 		with open('out.txt', 'a') as f:
+			print >> f, space1 + "cairo_close_path (cr);"
 			print >> f, space1 + "cairo_close_path(cr);" + new
 		f.close()
 

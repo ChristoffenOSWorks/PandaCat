@@ -19,6 +19,8 @@ def part1():
 		print >> f, space1 + "cairo_surface_t *surface = "
 	f.close()
 part1()
+
+print "Please enter the width and height of the image to be generated."
 resolution()
 
 def part2():
@@ -28,7 +30,19 @@ def part2():
 	f.close()
 
 part2()
+
+print "Please enter the R, G, and B values for the outline of the image to be generated."
 toCairo()
+
+def part2_5():
+	with open(filename, 'a') as f:
+		print >> f, space1 + "cairo_scale (cr, 1.0, 1.0);"
+	f.close()
+
+part2_5()
+
+print "Please enter the number of points to plot determined from static image using the GIMP or something similar"
+print "Please remember to close by making the last plot same as first."
 lineTo()
 
 def part3():
@@ -37,6 +51,8 @@ def part3():
 	f.close()
 
 part3()
+
+print "Please enter the R, G, and B values for the area of the image outline to be generated."
 toCairo()
 
 def part4():
@@ -45,6 +61,8 @@ def part4():
 	f.close()
 
 part4()
+
+print "Please give the name of the image to be generated."
 name()
 
 def part5():

@@ -1,0 +1,17 @@
+seventh-triangle-color
+421
+410
+0
+160
+229
+3
+304
+270
+311
+380
+252
+326
+0
+160
+229
+crstfn-color-7.png
