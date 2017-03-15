@@ -211,3 +211,13 @@ int
 main (int argc, char *argv[])
 {
         cairo_surface_t *surface = 
+#include "/usr/include/cairo/cairo.h"
+int
+main (int argc, char *argv[])
+{
+        cairo_surface_t *surface = 
+#include "/usr/include/cairo/cairo.h"
+int
+main (int argc, char *argv[])
+{
+        cairo_surface_t *surface = 
