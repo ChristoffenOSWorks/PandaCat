@@ -7,7 +7,9 @@ def resolution():
 	print space3 + subHeading * length3
 	width = int(raw_input(space3 + bell))
 
-	print space3 + hText + new
+	print new + space3 + subHeading * length4
+	print space3 + hText 
+	print space3 + subHeading * length3
 	height = int(raw_input(space3 + bell))
 
 	stringW = str(width)

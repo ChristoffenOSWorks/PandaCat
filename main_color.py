@@ -30,7 +30,10 @@ def part2():
 
 part2()
 
-print space3 + "Please enter the R, G, and B values for the outline of the image to be generated." + new
+print new + space3 + heading * length5
+print rgb
+print space3 + heading * length5
+
 toCairo()
 
 def part2_5():
@@ -40,8 +43,12 @@ def part2_5():
 
 part2_5()
 
-print space3 + "Please enter the number of points to plot determined from static image using the GIMP or something similar" 
-print space3 + "Please remember to close by making the last plot same as first." + new
+print new + space3 + heading * length10
+print points1
+print space3 + subHeading * length10
+print points2
+print space3 + heading * length10 
+
 lineTo()
 
 def part3():
@@ -51,7 +58,10 @@ def part3():
 
 part3()
 
-print space3 + "Please enter the R, G, and B values for the area of the image outline to be generated." + new
+print new + space3 + heading * length5
+print rgb
+print space3 + heading * length5
+
 toCairo()
 
 def part4():
@@ -61,7 +71,9 @@ def part4():
 
 part4()
 
-print space3 + "Please give the name of the image to be generated." + new
+print new + space3 + heading * length14
+print nameGen
+print space3 + heading * length14
 name()
 
 def part5():
@@ -72,6 +84,8 @@ def part5():
 		print >> f, "}"
 	f.close()
 part5()
+
+elfin()
 
 
 

@@ -1,3 +1,0 @@
-        cairo_close_path (cr);
-        cairo_close_path(cr);
-

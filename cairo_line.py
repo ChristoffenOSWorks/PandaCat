@@ -1,22 +1,24 @@
 from filename import *
+from variables import * 
 
-space1 = "        "
-new = "\n"
 def lineTo():
-	print "Please enter the number of pairs you want drawn"
-	number_of_times = int(raw_input("    >> "))
+	print new + space3 + subHeading * length11
+	print line1
+	print space3 + subHeading * length11
+	number_of_times = int(raw_input(space3 + bell))
 	time_current = 0
 
 	while (time_current < number_of_times):
-		print "Please enter X value of the first pair"
-		point_x1 = float(raw_input("    >> "))
+		print new + space3 + subHeading * length12
+		print xvalue1
+		print space3 + subHeading * length12
+		point_x1 = float(raw_input(space3 + bell))
 
-		print "Please enter Y value of the first pair"
-		point_y1 = float(raw_input("    >> "))
+		print new + space3 + subHeading * length13
+		print yvalue1
+		print space3 + subHeading * length13
+		point_y1 = float(raw_input(space3 + bell))
 
-		lineToStart = "cairo_line_to(cr, "
-		lineToEnd = ");"
-		end = ", "
 		x1 = str(point_x1)
 		y1 = str(point_y1)
 	

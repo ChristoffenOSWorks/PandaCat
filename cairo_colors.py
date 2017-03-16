@@ -2,17 +2,20 @@ from filename import *
 from variables import *
 
 def toCairo():
-	print convertR + new
-	r_one = float(raw_input(bell));
-	print new
+	print new + space3 + subHeading * length6
+	print convertR 
+	print space3 + subHeading * length6
+	r_one = float(raw_input(space3 + bell));
 
-	print convertG + new
-	g_one = float(raw_input(bell));
-	print new
+	print new + space3 + subHeading * length7
+	print convertG
+	print space3 + subHeading * length7
+	g_one = float(raw_input(space3 + bell));
 
-	print convertB + new
-	b_one = float(raw_input(bell));
-	print new
+	print new + space3 + subHeading * length8
+	print convertB 
+	print space3 + subHeading * length8
+	b_one = float(raw_input(space3 + bell));
 
 	r_two = r_one / 255;
 	g_two = g_one / 255;
@@ -30,7 +33,11 @@ def toCairo():
 		print >> f, space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
 	f.close()
 
-	print space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+	strOutputRGB = space3 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+	length9 = len(strOutputRGB) - 4
+	print new + space3 + subHeading * length9
+	print strOutputRGB
+	print space3 + subHeading * length9
 
 def toRGBA():
 	print convertR + new
