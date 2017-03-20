@@ -40,17 +40,20 @@ def toCairo():
 	print space3 + subHeading * length9
 
 def toRGBA():
-	print convertR + new
+	print new + space3 + subHeading * length6
+	print convertR 
+	print space3 + subHeading * length6
 	r_one = float(raw_input(bell));
-	print new
 
-	print convertG + new
+	print new + space3 + subHeading * length7
+	print convertG
+	print space3 + subHeading * length7
 	g_one = float(raw_input(bell));
-	print new
 
-	print convertB + new
+	print new + space3 + subHeading * length8
+	print convertB 
+	print space3 + subHeading * length8
 	b_one = float(raw_input(bell));
-	print new
 
 	r_two = r_one * 255;
 	g_two = g_one * 255;

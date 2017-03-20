@@ -3,9 +3,6 @@ setSourceRGBAStart = "cairo_set_source_rgba(cr, "
 before = "Before Cairo, the original RGB values are: " 
 bell = ">> "
 end = ", "
-crtOne = "(c) 2017 M. Gage Morgan. All Rights Reserved. Project start date: 2/24/2017"
-crtTwo = "Script to convert between sane-people RGB and near retard-level Cairo API."
-crtThree = "Type 'cairo' to convert to the Cairo-formatted RGB, or 'rgb' for the standard form."
 cmd = "Command not recognized"
 toCairoEnd = ", 0.8);"
 space1 = "        "
@@ -28,6 +25,7 @@ fnameHead = space3 + "Please enter the name of the file to be generated."
 points1 = space3 + "Please enter the number of points to plot determined from static image using the GIMP or something similar" 
 points2 = space3 + "Please remember to close by making the last plot same as first." 
 line1 = space3 + "Please enter the number of pairs you want drawn."
+overlaid = space3 + "Please enter the number of images to be drawn over top of each other."
 xvalue1 = space3 + "Please enter the X value of the current pair."
 yvalue1 = space3 + "Please enter the Y value of the current pair."
 nameGen = space3 + "Please give the name of the image to be generated."
@@ -39,6 +37,9 @@ gcc2 = space4 + "Compile the generated file with: "
 gcc3 = space4 + "gcc -o " 
 gcc4 = " `pkg-config --cflags cairo` "
 gcc5 = " `pkg-config --libs cairo`" 
+crtOne = space4 + "(c) 2017 M. Gage Morgan. All Rights Reserved. Project start date: 2/24/2017"
+crtTwo = space4 + "Script to convert between sane-people RGB and near retard-level Cairo API."
+crtThree = space3 + "Type 'cairo' to convert to the Cairo-formatted RGB, or 'rgb' for the standard form."
 heading = "="
 subHeading = "-"
 
@@ -56,4 +57,4 @@ length12 = len(xvalue1) - 4
 length13 = len(yvalue1) - 4
 length14 = len(nameGen) - 4
 length16 = len(starter2) - 12 
-
+length19 = len(crtThree) - 4
