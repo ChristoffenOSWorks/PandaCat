@@ -1,21 +1,22 @@
 from filename import *
 from variables import *
+spaces = Spaces()
 
 def toCairo():
-	print new + space3 + subHeading * length6
+	print new + spaces.space3 + subHeading * length6
 	print convertR 
-	print space3 + subHeading * length6
-	r_one = float(raw_input(space3 + bell));
+	print spaces.space3 + subHeading * length6
+	r_one = float(raw_input(spaces.space3 + bell));
 
-	print new + space3 + subHeading * length7
+	print new + spaces.space3 + subHeading * length7
 	print convertG
-	print space3 + subHeading * length7
-	g_one = float(raw_input(space3 + bell));
+	print spaces.space3 + subHeading * length7
+	g_one = float(raw_input(spaces.space3 + bell));
 
-	print new + space3 + subHeading * length8
+	print new + spaces.space3 + subHeading * length8
 	print convertB 
-	print space3 + subHeading * length8
-	b_one = float(raw_input(space3 + bell));
+	print spaces.space3 + subHeading * length8
+	b_one = float(raw_input(spaces.space3 + bell));
 
 	r_two = r_one / 255;
 	g_two = g_one / 255;
@@ -30,29 +31,29 @@ def toCairo():
 	stringB = str(b_three)
 
 	with open(filename, 'a') as f:
-		print >> f, space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+		print >> f, spaces.space1 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
 	f.close()
 
-	strOutputRGB = space3 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
+	strOutputRGB = spaces.space3 + setSourceRGBAStart + stringR + end + stringG + end + stringB + toCairoEnd
 	length9 = len(strOutputRGB) - 4
-	print new + space3 + subHeading * length9
+	print new + spaces.space3 + subHeading * length9
 	print strOutputRGB
-	print space3 + subHeading * length9
+	print spaces.space3 + subHeading * length9
 
 def toRGBA():
-	print new + space3 + subHeading * length6
+	print new + spaces.space3 + subHeading * length6
 	print convertR 
-	print space3 + subHeading * length6
+	print spaces.space3 + subHeading * length6
 	r_one = float(raw_input(bell));
 
-	print new + space3 + subHeading * length7
+	print new + spaces.space3 + subHeading * length7
 	print convertG
-	print space3 + subHeading * length7
+	print spaces.space3 + subHeading * length7
 	g_one = float(raw_input(bell));
 
-	print new + space3 + subHeading * length8
+	print new + spaces.space3 + subHeading * length8
 	print convertB 
-	print space3 + subHeading * length8
+	print spaces.space3 + subHeading * length8
 	b_one = float(raw_input(bell));
 
 	r_two = r_one * 255;

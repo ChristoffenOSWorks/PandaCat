@@ -1,20 +1,21 @@
 from cairo_colors import *
 from variables import *
+spaces = Spaces()
 
 def textColor():
-	print new + space4 + heading * length16
+	print new + spaces.space4 + heading * length16
 	print crtOne
-	print space4 + subHeading * length16
+	print spaces.space4 + subHeading * length16
 	print crtTwo 
-	print space4 + heading * length16
+	print spaces.space4 + heading * length16
 
-	print new + space3 + subHeading * length19
+	print new + spaces.space3 + subHeading * length19
 	print crtThree 
-	print space3 + subHeading * length19
+	print spaces.space3 + subHeading * length19
 
 textColor()
 
-mode = raw_input(space3 + bell);
+mode = raw_input(spaces.space3 + bell);
 if (mode == "cairo"):
 	while mode == "cairo":
 		try:
